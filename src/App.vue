@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
     <router-view/>
   </div>
 </template>
@@ -13,7 +9,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -29,4 +24,27 @@ nav {
     }
   }
 }
+
+
+.modal-body, 
+ .modal-content { 
+   border-radius: 0px !important; 
+   padding: 0px !important;
+ }
+
+ .close {
+    border: 0px;
+    background-color: transparent;
+    font-size: 20px;
+ }
+
+ .subcarde {
+    height: fit-content !important;
+    padding-left: 12px !important;
+  }
+
+  .custom-control-input{
+    margin: 8px 0;
+  }
+
 </style>
